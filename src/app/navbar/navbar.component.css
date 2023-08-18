@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+  
+  body {
+    font-family: initial;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  
+    .navbar-nou {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      padding: 10px;
+      margin: 100px auto;
+      background-color: navy;
+      color: white;
+      width: 68%;
+    }
+  
+    .nav-links a {
+      color: white;
+    }
+  
+    .menu {
+      display: inline-flex;
+      gap: 1em;
+      font-size: 18px;
+    }
+  
+    .menu li:hover {
+      background-color: blue  ;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+  
+    .menu li {
+      padding: 5px 14px;
+    }
+  
+    .home {
+      padding-right: 115px;
+    }
+  
+    .map {
+      padding-right: 115px;
+      padding-left: 115px;
+    }
+  
+    .contact {
+      padding-left: 115px;
+    }
