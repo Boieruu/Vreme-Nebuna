@@ -21,13 +21,13 @@ export class HomeComponent implements OnInit {
   }
 
   getWeatherData(){
-    fetch('api.openweathermap.org/data/2.5/weather?q=targu-jiu&appid=63fdce08f5b8339ef0c50c1e9e914dc5')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=63fdce08f5b8339ef0c50c1e9e914dc5')
     .then(response=>response.json())
     .then(data=>{this.setWeatherData(data);})
 
   }
 
-  setWeatherData(data){
+  setWeatherData(data: any){
     this.WeatherData = data;
     let sunsetTime = new Date(this.WeatherData.sys.sunset * 1000);
     this.WeatherData.sunset_time = sunsetTime.toLocaleTimeString();
