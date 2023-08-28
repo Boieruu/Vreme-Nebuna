@@ -62,7 +62,7 @@
     .contact {
       padding-left: 115px;
     }
-    .nume{
+    .nume a{
       display: flex;
       align-items: center;
       justify-content: center;
