@@ -10,7 +10,7 @@ body {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background-color: skyblue;
+  background-color: #1f9fde;
   width:30%;
   height:20%;  
   border:2px dashed white;
