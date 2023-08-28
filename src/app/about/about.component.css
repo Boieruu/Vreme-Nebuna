@@ -8,15 +8,15 @@ body {
   display: flex;
   justify-content: center;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  margin: 50px auto;
+  font-size: 28px; 
+  margin: 70px auto;
 }
 
 .despre {
   text-align: center;
   font-family: Candara, 'Courier New', Courier, monospace;
-  font-size: 31px;
-  margin-top: -50px;
+  font-size: 36px;
+  margin-top: -30px;
 }
 
 .button {
@@ -29,12 +29,12 @@ body {
   color: #FFFFFF;
   display: flex;
   font-family: Phantomsans, sans-serif;
-  font-size: 20px;
+  font-size: 24px; 
   justify-content: center;
-  line-height: 1em;
+  line-height: 1.2em; 
   max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
+  min-width: 180px; 
+  padding: 19px 28px; 
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -43,24 +43,27 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 37px;
+  margin-top: 47px; 
 }
 
 .button:active,
 .button:hover {
   box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset, rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
-@media (min-width: 768px) {
-  .button {
-    font-size: 24px;
-    min-width: 196px;
+@media (min-width: 1200px) { 
+  .imagine-about {
+    width: 50%; 
+  }
+
+  .bottom-rectangle {
+    bottom: -90px;
   }
 }
 
 .imagine-about {
-  width: 40%;
+  width: 44%;
   float: left;
 }
 
