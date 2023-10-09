@@ -6,18 +6,22 @@ import { WorldMapComponent } from './world-map/world-map.component';
 import { UywComponent } from './uyw/uyw.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReadmoreComponent } from './about/readmore/readmore.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'home', component: HomeComponent},
-  { path: 'about', component: AboutComponent},
-  { path: 'worldmap', component: WorldMapComponent},
-  { path: 'uyw', component: UywComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'worldmap', component: WorldMapComponent },
+  { path: 'uyw', component: UywComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

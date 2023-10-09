@@ -10,10 +10,14 @@ import { WorldMapComponent } from './world-map/world-map.component';
 import { UywComponent } from './uyw/uyw.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReadmoreComponent } from './about/readmore/readmore.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-const routes: Routes = [
-  { path: 'readmore', component: ReadmoreComponent },
-];
+const routes: Routes = [{ path: 'readmore', component: ReadmoreComponent }];
 
 @NgModule({
   declarations: [
@@ -24,15 +28,27 @@ const routes: Routes = [
     WorldMapComponent,
     UywComponent,
     ContactComponent,
-    ReadmoreComponent
+    ReadmoreComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes), 
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+    FormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-bottom-center',
+      newestOnTop: false,
+    }),
   ],
   exports: [RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
