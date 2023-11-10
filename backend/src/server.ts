@@ -16,7 +16,7 @@ app.use(
   cors({
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    origin: ["https://testwebsite-ousg.onrender.com"],
+    origin: ["https://weatherwazee.onrender.com"],
   })
 );
 

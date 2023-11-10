@@ -17,7 +17,7 @@ var port = process.env.PORT || 5000;
 app.use((0, cors_1.default)({
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    origin: ["https://testwebsite-ousg.onrender.com"],
+    origin: ["https://weatherwazee.onrender.com"],
 }));
 app.use(body_parser_1.default.json());
 app.use("/api/people", person_router_1.personRouter);

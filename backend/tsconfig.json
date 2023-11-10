@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    
     //use module system commonjs for js files
     "module": "CommonJS",
     //look for modules in node_modules
