@@ -6,20 +6,14 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthGuard } from './guard/auth.guard';
+import { UywComponent } from './uyw/uyw.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  {
-    path: 'uyw',
-    loadChildren: () => import('./uyw/uyw.module').then((m) => m.UywModule),
-    canActivate: [AuthGuard],
-  },
-  {
-    path: 'about',
-    loadChildren: () =>
-      import('./about/about.module').then((m) => m.AboutModule),
-  },
+  { path: 'uyw', component: UywComponent, canActivate: [AuthGuard] },
+  { path: 'about', component: AboutComponent },
   { path: 'worldmap', component: WorldMapComponent },
   { path: 'login', component: LoginComponent },
   { path: 'contact', component: ContactComponent },
